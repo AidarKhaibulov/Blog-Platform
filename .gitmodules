@@ -1,0 +1,3 @@
+[submodule "Authentication"]
+	path = Authentication
+	url = https://github.com/AidarKhaibulov/Blog-Platform.git
