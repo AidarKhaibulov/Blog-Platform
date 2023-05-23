@@ -16,6 +16,8 @@
     <packaging>pom</packaging>
     <modules>
         <module>discovery-server</module>
+        <module>api-gateway</module>
+        <module>demo-service</module>
     </modules>
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
