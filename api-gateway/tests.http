@@ -1,0 +1,34 @@
+POST http://localhost:8080/auth-service/auth/register
+Content-Type: application/json
+
+{
+  "email":"adew1357@yandex.ru",
+  "password": "123",
+  "firstname": "ivan",
+  "lastname": "sdfsd"
+}
+### authenticate via gateway
+POST http://localhost:8080/auth-service/auth/authenticate
+Content-Type: application/json
+
+{
+  "email":"adew1357@yandex.ru",
+  "password": "123"
+}
+### authenticate
+POST http://localhost:8080/auth/authenticate
+Content-Type: application/json
+
+{
+  "email":"adew1357@yandex.ru",
+  "password": "123"
+}
+###
+GET http://localhost:8080/auth-service/auth
+
+
+###
+GET http://localhost:53148/auth
+
+###
+GET http://localhost:8080/eureka/web
