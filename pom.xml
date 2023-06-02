@@ -17,7 +17,7 @@
     <modules>
         <module>discovery-server</module>
         <module>demo</module>
-        <module>api-gateway</module>
+        <module>auth-service</module>
     </modules>
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
