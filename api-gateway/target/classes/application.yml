@@ -1,0 +1,23 @@
+spring:
+ cloud:
+   gateway:
+     routes:
+       - id: demo-test-service
+         uri: lb://DEMO-SERVICE
+         predicates:
+           - Path=/demo/**
+         filters:
+           - AuthenticationFilter
+
+       - id: auth-service
+         uri: lb://AUTH-SERVICE
+         predicates:
+           - Path=/auth/**
+
+ application:
+   name: API-GATEWAY
+
+eureka:
+  client:
+    service-url:
+      defaultZone : http://localhost:8761/eureka/

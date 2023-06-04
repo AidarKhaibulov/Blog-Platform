@@ -1,0 +1,22 @@
+### Register
+POST http://localhost:8080/auth/register
+Content-Type: application/json
+
+{
+  "username":"ioann",
+  "email":"ioann@gmail.com",
+  "password":"12345678"
+}
+
+### Authenticate
+POST http://localhost:8080/auth/authenticate
+Content-Type: application/json
+
+{
+  "username":"victor",
+  "password":"123"
+}
+
+### Demo
+GET http://localhost:8080/demo
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkaW1hIiwiaWF0IjoxNjg1ODg2ODE4LCJleHAiOjE2ODU4ODg2MTh9.3cGXLuEki9AJxn68WnYu4XTb0H1ShRrGftjhO4kbJyY
