@@ -7,7 +7,6 @@ import com.ms.dto.UserDto;
 import com.ms.exceptions.AuthenticationFailedException;
 import com.ms.exceptions.EmailOrUsernameAlreadyExistsException;
 import com.ms.service.AuthService;
-import com.ms.service.UserService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -22,16 +21,11 @@ import org.springframework.web.bind.annotation.*;
 @RequiredArgsConstructor
 @Slf4j
 public class AuthController {
-    private final UserService userService;
     @Autowired
     private AuthService authService;
     @Autowired
     private AuthenticationManager authenticationManager;
 
-    /*@PostMapping("/register")
-    public UserDto addNewUser(@Valid @RequestBody RegisterRequest registerRequest) throws RuntimeException{
-        return authService.register(registerRequest);
-    }*/
     @PostMapping("/register")
     public ApiResponse addNewUser(@Valid @RequestBody RegisterRequest registerRequest) {
         try {
@@ -41,7 +35,6 @@ public class AuthController {
             return ApiResponse.error("Email or Username already exists");
         }
     }
-
 
     @PostMapping("/authenticate")
     public String getToken(@RequestBody AuthRequest authRequest) {
@@ -54,8 +47,7 @@ public class AuthController {
     }
 
     @GetMapping("/validate")
-    public String validateToken(@RequestParam("token") String token) {
+    public void validateToken(@RequestParam("token") String token) {
         authService.validateToken(token);
-        return "Token is valid";
     }
 }

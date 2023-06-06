@@ -13,8 +13,8 @@ POST http://localhost:8080/auth/authenticate
 Content-Type: application/json
 
 {
-  "username":"victor",
-  "password":"123"
+  "username":"ioann",
+  "password":"12345678"
 }
 
 ### Demo
