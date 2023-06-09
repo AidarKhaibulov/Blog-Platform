@@ -1,6 +1,6 @@
 spring:
   application:
-    name: DEMO-SERVICE
+    name: ACCOUNT-SERVICE
 
 eureka:
   client:
@@ -9,4 +9,4 @@ eureka:
 
 
 server:
-  port: 0
+  port: 8888

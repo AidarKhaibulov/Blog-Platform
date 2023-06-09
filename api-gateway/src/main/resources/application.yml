@@ -2,10 +2,10 @@ spring:
  cloud:
    gateway:
      routes:
-       - id: demo-test-service
-         uri: lb://DEMO-SERVICE
+       - id: account-service
+         uri: lb://ACCOUNT-SERVICE
          predicates:
-           - Path=/demo/**
+           - Path=/account/**
          filters:
            - AuthenticationFilter
 

@@ -10,7 +10,7 @@
         <module name="api-gateway" />
         <module name="auth-service" />
         <module name="discovery-server" />
-        <module name="demo-test-service" />
+        <module name="account-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -26,6 +26,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Authentication" options="-parameters" />
       <module name="BlogPlatform" options="" />
+      <module name="account-service" options="-parameters" />
       <module name="api-gateway" options="-parameters" />
       <module name="auth-service" options="-parameters" />
       <module name="auth-service (1)" options="-parameters" />
@@ -33,7 +34,6 @@
       <module name="auth-service (2)" options="-parameters" />
       <module name="auth-service (2) (com.javatechie)" options="-parameters" />
       <module name="demo" options="-parameters" />
-      <module name="demo-test-service" options="-parameters" />
       <module name="discovery-server" options="-parameters" />
     </option>
   </component>

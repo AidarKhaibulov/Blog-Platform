@@ -10,6 +10,10 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class UserService {
     private final UserRepository userRepository;
+    public User getUserInfo(){
+        //TODO: return user's data
+        return null;
+    }
 
     public UserDto mapToUserDto(User user) {
         return UserDto.builder()
