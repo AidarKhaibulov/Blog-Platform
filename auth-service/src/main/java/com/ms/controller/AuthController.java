@@ -7,6 +7,7 @@ import com.ms.dto.UserDto;
 import com.ms.exceptions.AuthenticationFailedException;
 import com.ms.exceptions.EmailOrUsernameAlreadyExistsException;
 import com.ms.service.AuthService;
+import com.ms.service.JwtService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -25,6 +26,8 @@ public class AuthController {
     private AuthService authService;
     @Autowired
     private AuthenticationManager authenticationManager;
+    @Autowired
+    private JwtService jwtService;
 
     @PostMapping("/register")
     public ApiResponse addNewUser(@Valid @RequestBody RegisterRequest registerRequest) {
@@ -49,5 +52,10 @@ public class AuthController {
     @GetMapping("/validate")
     public void validateToken(@RequestParam("token") String token) {
         authService.validateToken(token);
+    }
+
+    @GetMapping("/getCurrentUserEmail")
+    public String getCurrentUserEmail(@RequestParam("token") String token) {
+        return jwtService.parseToken(token).getSubject();
     }
 }

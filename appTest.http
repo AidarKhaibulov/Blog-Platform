@@ -17,14 +17,17 @@ Content-Type: application/json
   "password":"12345678"
 }
 
-### Demo
-GET http://localhost:8080/demo
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkaW1hIiwiaWF0IjoxNjg1ODg2ODE4LCJleHAiOjE2ODU4ODg2MTh9.3cGXLuEki9AJxn68WnYu4XTb0H1ShRrGftjhO4kbJyY
-
 ###
-GET http://localhost:8080/account
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpb2FubiIsImlhdCI6MTY4NjMzNjA0MywiZXhwIjoxNjg2MzM3ODQzfQ.GmKVkD_gSARc13zHcp-27nQ0KPuqsxUqXAtAOtpkJ-c
+GET http://localhost:8080/auth/getCurrentUserEmail?token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpb2FubiIsImlhdCI6MTY4NjQxOTMwOCwiZXhwIjoxNjg2NDIxMTA4fQ.vse1UIqSYpWc9vzdK9M3AHPYeJWKPDyhp9AQHP8j27Y
 
 
 ###
-GET http://localhost:8888/account
+GET http://localhost:9898/auth/getCurrentUserEmail?token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpb2FubiIsImlhdCI6MTY4NjQxOTMwOCwiZXhwIjoxNjg2NDIxMTA4fQ.vse1UIqSYpWc9vzdK9M3AHPYeJWKPDyhp9AQHP8j27Y
+
+
+###
+GET http://localhost:8888/account/eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpb2FubiIsImlhdCI6MTY4NjQxOTMwOCwiZXhwIjoxNjg2NDIxMTA4fQ.vse1UIqSYpWc9vzdK9M3AHPYeJWKPDyhp9AQHP8j27Y
+
+###
+GET http://localhost:8080/account/eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpb2FubiIsImlhdCI6MTY4NjQxOTMwOCwiZXhwIjoxNjg2NDIxMTA4fQ.vse1UIqSYpWc9vzdK9M3AHPYeJWKPDyhp9AQHP8j27Y
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpb2FubiIsImlhdCI6MTY4NjQxOTMwOCwiZXhwIjoxNjg2NDIxMTA4fQ.vse1UIqSYpWc9vzdK9M3AHPYeJWKPDyhp9AQHP8j27Y

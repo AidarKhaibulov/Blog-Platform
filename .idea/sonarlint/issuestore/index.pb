@@ -13,8 +13,6 @@ k
 ;api-gateway/src/main/java/com/ms/ApiGatewayApplication.java,4\0\40705b793c2491f0ff7e932bf4e3cc8c1ed80bde
 v
 Fauth-service/src/main/java/com/ms/config/CustomUserDetailsService.java,b\c\bc27d2f8f549e3e441ab79d3e4877d9eb2bd6629
-f
-6auth-service/src/main/java/com/ms/AuthApplication.java,a\4\a4f6363fd078af0ee1423ed5c4f43316bad49d86
 
 Oauth-service/src/main/java/com/ms/exceptions/AuthenticationFailedException.java,8\9\89febaaf8ee7a49b4c4eda2b7f1e865e6733f33c
 ‡
@@ -29,9 +27,11 @@ o
 ?auth-service/src/main/java/com/ms/config/CustomUserDetails.java,1\5\1594cdfc0e5d837afd3e3c7d08616333132fa87a
 f
 6auth-service/src/main/java/com/ms/dto/AuthRequest.java,c\9\c9a5336eb77ec49af6d7a2633fa73acc1e9a20ec
-i
-9auth-service/src/main/java/com/ms/service/JwtService.java,3\d\3d6973c743d17a2992e17f348c36ed78546f93ee
 j
 :auth-service/src/main/java/com/ms/dto/RegisterRequest.java,a\f\af72944312947970f329f319a1a3b3f5fbb326ee
 b
 2auth-service/src/main/java/com/ms/dto/UserDto.java,3\f\3ff86bf7b1443b86c36cfa1931bd85abcb26783d
+j
+:auth-service/src/main/java/com/ms/service/UserService.java,8\c\8c26971d3d6741a25c14b09d70fad84e30219045
+s
+Caccount-service/src/main/java/com/ms/AccountServiceApplication.java,7\7\7739041b8fb67209adfdafdd29476710568be698

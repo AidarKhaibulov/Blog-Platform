@@ -11,6 +11,7 @@
         <module name="auth-service" />
         <module name="discovery-server" />
         <module name="account-service" />
+        <module name="users-utitily-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -35,6 +36,7 @@
       <module name="auth-service (2) (com.javatechie)" options="-parameters" />
       <module name="demo" options="-parameters" />
       <module name="discovery-server" options="-parameters" />
+      <module name="users-utitily-service" options="-parameters" />
     </option>
   </component>
 </project>

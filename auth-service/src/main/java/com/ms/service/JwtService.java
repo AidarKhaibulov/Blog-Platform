@@ -1,5 +1,6 @@
 package com.ms.service;
 
+import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import io.jsonwebtoken.io.Decoders;
@@ -16,7 +17,7 @@ import java.util.Map;
 public class JwtService {
 
     @Value("${BP_SECRET_KEY}")
-    private String secretKEy;
+    private String secretKey;
 
 
     public void validateToken(final String token) {
@@ -39,7 +40,11 @@ public class JwtService {
     }
 
     private Key getSignKey() {
-        byte[] keyBytes = Decoders.BASE64.decode(secretKEy);
+        byte[] keyBytes = Decoders.BASE64.decode(secretKey);
         return Keys.hmacShaKeyFor(keyBytes);
+    }
+
+    public Claims parseToken(String token) {
+        return Jwts.parser().setSigningKey(secretKey).parseClaimsJws(token).getBody();
     }
 }
