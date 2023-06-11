@@ -54,8 +54,8 @@ public class AuthController {
         authService.validateToken(token);
     }
 
-    @GetMapping("/getCurrentUserEmail")
-    public String getCurrentUserEmail(@RequestParam("token") String token) {
+    @GetMapping("/getCurrentUserEmail/{token}")
+    public String getCurrentUserEmail(@PathVariable String token) {
         return jwtService.parseToken(token).getSubject();
     }
 }

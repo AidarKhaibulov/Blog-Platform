@@ -3,8 +3,8 @@ POST http://localhost:8080/auth/register
 Content-Type: application/json
 
 {
-  "username":"ioann",
-  "email":"ioann@gmail.com",
+  "username":"natalia",
+  "email":"natalia@gmail.com",
   "password":"12345678"
 }
 
@@ -13,21 +13,27 @@ POST http://localhost:8080/auth/authenticate
 Content-Type: application/json
 
 {
-  "username":"ioann",
+  "username":"natalia",
   "password":"12345678"
 }
 
-###
-GET http://localhost:8080/auth/getCurrentUserEmail?token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpb2FubiIsImlhdCI6MTY4NjQxOTMwOCwiZXhwIjoxNjg2NDIxMTA4fQ.vse1UIqSYpWc9vzdK9M3AHPYeJWKPDyhp9AQHP8j27Y
 
 
-###
-GET http://localhost:9898/auth/getCurrentUserEmail?token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpb2FubiIsImlhdCI6MTY4NjQxOTMwOCwiZXhwIjoxNjg2NDIxMTA4fQ.vse1UIqSYpWc9vzdK9M3AHPYeJWKPDyhp9AQHP8j27Y
+### Get user info
+GET http://localhost:8080/account
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2YW55YSIsImlhdCI6MTY4NjQ3MDU3MSwiZXhwIjoxNjg2NDcyMzcxfQ.eD0829k_qcqLwtYWEinrf7aGPkD0htsKeTOqYe_QFok
+
+### Update user
+PUT http://localhost:8080/account
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuYXRhbGlhIiwiaWF0IjoxNjg2NTA1NDgxLCJleHAiOjE2ODY1MDcyODF9.HV5OQWoXpZ11CJalO0PmhlO_9Y_DpvTu5KvRuXGBBgw
+Content-Type: application/json
+
+{
+  "email": "n@gmail.com",
+  "password":"1234567810"
+}
 
 
-###
-GET http://localhost:8888/account/eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpb2FubiIsImlhdCI6MTY4NjQxOTMwOCwiZXhwIjoxNjg2NDIxMTA4fQ.vse1UIqSYpWc9vzdK9M3AHPYeJWKPDyhp9AQHP8j27Y
-
-###
-GET http://localhost:8080/account/eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpb2FubiIsImlhdCI6MTY4NjQxOTMwOCwiZXhwIjoxNjg2NDIxMTA4fQ.vse1UIqSYpWc9vzdK9M3AHPYeJWKPDyhp9AQHP8j27Y
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpb2FubiIsImlhdCI6MTY4NjQxOTMwOCwiZXhwIjoxNjg2NDIxMTA4fQ.vse1UIqSYpWc9vzdK9M3AHPYeJWKPDyhp9AQHP8j27Y
+### Delete user
+DELETE http://localhost:8080/account
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuYXRhbGlhIiwiaWF0IjoxNjg2NTA1NDgxLCJleHAiOjE2ODY1MDcyODF9.HV5OQWoXpZ11CJalO0PmhlO_9Y_DpvTu5KvRuXGBBgw
