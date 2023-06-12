@@ -8,12 +8,22 @@ Content-Type: application/json
   "password":"12345678"
 }
 
+### Register fron only auth one
+POST http://localhost:9898/auth/register
+Content-Type: application/json
+
+{
+  "username":"natalia",
+  "email":"natalia@gmail.com",
+  "password":"12345678"
+}
+
 ### Authenticate
 POST http://localhost:8080/auth/authenticate
 Content-Type: application/json
 
 {
-  "username":"natalia",
+  "username":"vanya",
   "password":"12345678"
 }
 
