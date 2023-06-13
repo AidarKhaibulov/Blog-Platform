@@ -20,6 +20,8 @@
         <module>api-gateway</module>
         <module>account-service</module>
         <module>users-utitily-service</module>
+        <module>blog-manage-service</module>
+        <module>article-manage-service</module>
     </modules>
     <properties>
         <maven.compiler.source>17</maven.compiler.source>

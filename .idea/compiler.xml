@@ -7,11 +7,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="api-gateway" />
         <module name="auth-service" />
         <module name="discovery-server" />
-        <module name="account-service" />
         <module name="users-utitily-service" />
+        <module name="api-gateway" />
+        <module name="account-service" />
+        <module name="blog-manage-service" />
+        <module name="article-manage-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -29,11 +31,13 @@
       <module name="BlogPlatform" options="" />
       <module name="account-service" options="-parameters" />
       <module name="api-gateway" options="-parameters" />
+      <module name="article-manage-service" options="-parameters" />
       <module name="auth-service" options="-parameters" />
       <module name="auth-service (1)" options="-parameters" />
       <module name="auth-service (1) (com.ms)" options="-parameters" />
       <module name="auth-service (2)" options="-parameters" />
       <module name="auth-service (2) (com.javatechie)" options="-parameters" />
+      <module name="blog-manage-service" options="-parameters" />
       <module name="demo" options="-parameters" />
       <module name="discovery-server" options="-parameters" />
       <module name="users-utitily-service" options="-parameters" />
