@@ -31,7 +31,8 @@ Content-Type: application/json
 
 ### Get user info
 GET http://localhost:8080/account
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2YW55YSIsImlhdCI6MTY4NjQ3MDU3MSwiZXhwIjoxNjg2NDcyMzcxfQ.eD0829k_qcqLwtYWEinrf7aGPkD0htsKeTOqYe_QFok
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2YW55YSIsImlhdCI6MTY4NzY4ODA2NCwiZXhwIjoxNjg3Njg5ODY0fQ.GuCn5v8xPOwCf37veuAU9sIyNBwAPoBCIgay6ZGYh0E
+
 
 ### Update user
 PUT http://localhost:8080/account
